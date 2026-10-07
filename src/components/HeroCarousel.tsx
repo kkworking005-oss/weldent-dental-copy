@@ -20,7 +20,7 @@ export function HeroCarousel({ images }: { images: readonly HeroImage[] }) {
 
   return (
     <div
-      className="relative aspect-4/3 overflow-hidden rounded-2xl bg-primary/5"
+      className="relative aspect-[1200/674] overflow-hidden rounded-2xl bg-primary/5"
       role="region"
       aria-label="Weldent Dental Clinic photographs"
     >
@@ -30,7 +30,7 @@ export function HeroCarousel({ images }: { images: readonly HeroImage[] }) {
         srcSet={images[active]!.srcSet}
         sizes="(max-width: 1023px) calc(100vw - 40px), 45vw"
         width="1200"
-        height="900"
+        height="674"
         loading="eager"
         fetchPriority={active === 0 ? "high" : "auto"}
         decoding="async"
