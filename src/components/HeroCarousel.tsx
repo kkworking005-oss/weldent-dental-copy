@@ -29,7 +29,7 @@ export function HeroCarousel({ images }: { images: readonly HeroImage[] }) {
         src={images[active]!.src}
         srcSet={images[active]!.srcSet}
         sizes="(max-width: 1023px) calc(100vw - 40px), 45vw"
-        width="1200"
+        width="1600"
         height="674"
         loading="eager"
         fetchPriority={active === 0 ? "high" : "auto"}
